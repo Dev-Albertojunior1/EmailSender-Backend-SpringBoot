@@ -34,3 +34,12 @@ logging:
     org:
       springframework:
         amqp: DEBUG
+
+
+
+
+
+
+
+
+
