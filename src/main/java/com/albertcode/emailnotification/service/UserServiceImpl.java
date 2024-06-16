@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService{
         User user = UserMapper.mapToUser(new User(),requestDto);
 //        user.setPassword(""); // Define a senha como uma string vazia
         emailService.sendEmail(EmailDetails.builder()
-                        .messageBody("You’ve successfully subscribed! with mail id: "+requestDto.getEmail() + "Stay tuned for updates and exclusive content.")
+                        .messageBody("You’ve successfully subscribed! with mail id: "+requestDto.getEmail() + " Stay tuned for updates and exclusive content.")
                         .recipient(requestDto.getEmail())
                         .subject("REGISTRATION SUCCESS")
                 .build());
